@@ -22,7 +22,7 @@ export default function TextCon(props) {
     }
   return (
     <>
-    <div className="container" style={{color: props.mode==='light'?'black':'white'}}>
+    <div className="container mt-2" style={{color: props.mode==='light'?'black':'white'}}>
         <h1>{props.heading}</h1>
         <div className="mb-3">
         <textarea className="form-control" style={{backgroundColor: props.mode==='dark'?'#184A9C':'white', color: props.mode==='light'?'black':'white'}} value={text} onChange={handlechange} id="textBox" rows="8"></textarea>

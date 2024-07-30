@@ -32,7 +32,7 @@ function App() {
   }
   return (
     <>
-     <Navbar title="Text" mode={mode} toggleMode= {toggleMode}/>
+     <Navbar title="Text Beautifier" mode={mode} toggleMode= {toggleMode}/>
      <Alert alert={alert}/>
      <div className="container my 3">
       <TextCon heading="Enter text to analyze" mode={mode} showAlert={showAlert}/>
