@@ -20,6 +20,10 @@ export default function TextCon(props) {
         console.log("On change");
         setText(event.target.value)
     }
+    const handleclear = (event) => {
+        console.log("On change");
+        setText("")
+    }
   return (
     <>
     <div className="container mt-2" style={{color: props.mode==='light'?'black':'white'}}>
@@ -30,6 +34,7 @@ export default function TextCon(props) {
         <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleupclick}>Convert Uppercase</button>
         <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleloclick}>Convert Lowercase</button>
         <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handlecpyclick}>Copy Text</button>
+        <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleclear}>Clear Text</button>
     </div>
     <div className="container my-3" style={{color: props.mode==='light'?'black':'white'}}>
       <h2>Text Summary</h2>
