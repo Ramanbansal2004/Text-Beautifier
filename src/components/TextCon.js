@@ -20,8 +20,7 @@ export default function TextCon(props) {
         console.log("On change");
         setText(event.target.value)
     }
-    const handleclear = (event) => {
-        console.log("On change");
+    const handleclear = () => {
         setText("")
     }
   return (
